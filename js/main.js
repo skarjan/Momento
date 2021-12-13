@@ -22,6 +22,3 @@ let p = document.getElementById('textContainer');
 setInterval(function(){
   p.innerHTML = `${returnDateString()} ${returnTimeString()}`
 }, 1000)
-let body = document.body;
-
-body.appendChild(p);
