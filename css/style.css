@@ -1,8 +1,15 @@
-.taglineContainer {
+.container__tagline {
   display:flex;
   justify-content: center;
 }
-.textContainer {
+.container__clock {
+  display:flex;
+  justify-content: center;
+}
+.clock__text {
+  width: 350px;
+}
+.container__text {
   /* needs a fixed width lest it jumps around when adding ellipsis */
   width:150px;
 }

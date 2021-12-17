@@ -21,9 +21,9 @@ function returnTimeString() {
 
 
 
-let clock = document.getElementById('clockContent'),
+let clock = document.getElementById('jsClock'),
   tagline = document.getElementById('textContainer'),
-  ellipsis = document.getElementById('ellipsisContainer');
+  ellipsis = document.getElementById('jsEllipsis');
 
 setInterval(function () {
   if (ellipsis.innerHTML.length > 2) {
