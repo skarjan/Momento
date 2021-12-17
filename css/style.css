@@ -1,0 +1,8 @@
+.taglineContainer {
+  display:flex;
+  justify-content: center;
+}
+.textContainer {
+  /* needs a fixed width lest it jumps around when adding ellipsis */
+  width:150px;
+}

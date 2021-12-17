@@ -19,7 +19,7 @@ function returnTimeString() {
 
 console.log(returnDateString() + ' ' + returnTimeString());
 
-let clock = document.getElementById('clockContainer');
+let clock = document.getElementById('clockContent');
 let tagline = document.getElementById('textContainer');
 let ellipsis = document.getElementById('ellipsisContainer')
 setInterval(function () {
