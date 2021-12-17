@@ -7,6 +7,7 @@
   justify-content: center;
 }
 .clock__text {
+  /* needs a fixed width lest it jumps around when adding ellipsis */
   width: 350px;
 }
 .container__text {
