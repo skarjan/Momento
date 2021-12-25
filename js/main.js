@@ -23,7 +23,6 @@ function returnTimeString() {
 function timeClock() {
 
   let clock = document.getElementById('jsClock'),
-    tagline = document.getElementById('textContainer'),
     ellipsis = document.getElementById('jsEllipsis');
 
   setInterval(function () {
@@ -36,5 +35,10 @@ function timeClock() {
   }, 1000)
 }
 
+let clock = document.querySelectorAll('.bi-clock')[0];
+
+clock.addEventListener("click", function(){
+  console.log(this.classList);
+})
 // FuncMaster 
 timeClock()
