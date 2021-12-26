@@ -44,7 +44,9 @@ function addClockEventListener() {
     logThis(e);
   })
 }
-
+function createInput(){
+  // do something 
+}
 // FuncMaster 
 timeClock()
 addClockEventListener();
