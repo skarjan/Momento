@@ -36,7 +36,7 @@ function timeClock() {
 }
 
 function logThis(event){
-  console.log(event);
+  console.log(event.target.classList);
 }
 function addClockEventListener() {
   let clock = document.querySelectorAll('.bi-clock')[0];
