@@ -35,10 +35,16 @@ function timeClock() {
   }, 1000)
 }
 
-let clock = document.querySelectorAll('.bi-clock')[0];
+function logThis(event){
+  console.log(event);
+}
+function addClockEventListener() {
+  let clock = document.querySelectorAll('.bi-clock')[0];
+  clock.addEventListener("click", function(e){
+    logThis(e);
+  })
+}
 
-clock.addEventListener("click", function(){
-  console.log(this.classList);
-})
 // FuncMaster 
 timeClock()
+addClockEventListener();
