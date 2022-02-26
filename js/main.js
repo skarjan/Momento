@@ -16,7 +16,7 @@ function returnTimeString() {
     adjustedSecs = '0' + adjustedSecs;
   }
 
-  return newDate.getHours() + ':' + adjustedMinutes + ':' + adjustedSecs;
+  return newDate.getHours() + ':' + adjustedMinutes;
 }
 
 
