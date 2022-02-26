@@ -45,8 +45,17 @@ function addClockEventListener() {
   })
 }
 function createInput(){
-  // do something 
+  console.log(event.currentTarget);
 }
+
+function addEventlistenerToElement(elementId, evType, fn){
+  document.getElementById(elementId).addEventListener(evType, function(){
+    fn(event);
+  })
+}
+
+
 // FuncMaster 
 timeClock()
 addClockEventListener();
+addEventlistenerToElement('moInput', 'click', createInput);
