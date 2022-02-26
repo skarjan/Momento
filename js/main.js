@@ -54,8 +54,25 @@ function addEventlistenerToElement(elementId, evType, fn){
   })
 }
 
+function functionNexus(){
+  addStringToArray(event, 'moInput');
+}
 
+function addStringToArray(event, inputId){
+  let inputField = document.getElementById(inputId);
+  let str = inputField.value;;
+  let para = createParagraph(str, 'momento');
+  let firstNode = document.getElementById('firstNode');
+  firstNode.appendChild(para);
+}
+function createParagraph(string, classNames){
+  let para = document.createElement('p');
+  para.innerHTML = string;
+  para.classList.add(classNames);
+  return para;
+}
 // FuncMaster 
 timeClock()
 addClockEventListener();
-addEventlistenerToElement('moInput', 'click', createInput);
+addEventlistenerToElement('addButton', 'click', functionNexus);
+
