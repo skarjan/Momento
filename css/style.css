@@ -5,11 +5,11 @@
 }
 .clock__text {
   /* needs a fixed width lest it jumps around when adding ellipsis */
-  width: 400px;
+  width: auto;
 }
 .container__text {
   /* needs a fixed width lest it jumps around when adding ellipsis */
-  width:150px;
+  width:125px;
 }
 .bi-clock {
   font-size: 2rem;
